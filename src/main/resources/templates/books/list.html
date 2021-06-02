@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Spring Framework-5, Books View</title>
+    <title>Spring Framework-5, Books</title>
 </head>
 <body>
 <h1>Book List</h1>
@@ -15,7 +15,7 @@
     </tr>
     <tr th:each="book : ${books}">
         <td th:text=" ${book.id} ">123</td>
-        <td th:text="${book.title}"> Spring in Action</td>
+        <td th:text="${book.name}"> Spring in Action</td>
         <td th:text="${book.publisher.name}">Wrox</td>
     </tr>
 </table>
